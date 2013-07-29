@@ -13,6 +13,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-yL-YzP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="T0P-4D-dhx"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iWY-Mf-WuB"/>
                                     <barButtonItem style="plain" id="tK6-vO-as9">
@@ -33,18 +36,36 @@
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e72-pG-oYa">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-zX-3Z2">
+                                        <mutableString key="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc nisi, tincidunt nec nisl a, sodales volutpat dolor. Maecenas molestie a libero a lacinia. Fusce sodales euismod arcu, molestie viverra est mattis in. Donec pharetra ligula in elit aliquam ullamcorper. Praesent sed lobortis tellus. Aenean laoreet nibh vel pharetra dignissim. 
+
+Integer a augue vitae elit blandit bibendum sit amet in orci. Etiam ac odio eu nulla luctus porta. Praesent ante erat, tristique in leo eget, mattis pellentesque erat. Phasellus ut felis luctus, viverra purus sit amet, commodo erat. Vestibulum quis sem feugiat, dapibus est a, elementum erat. Nam feugiat turpis purus, eu pulvinar eros pretium ac. 
+
+Morbi ornare, lacus et feugiat auctor, neque orci interdum dui, ut imperdiet ligula urna at ipsum. Donec lectus orci, blandit a dignissim sit amet, sagittis id urna. Mauris sodales neque est, non scelerisque nisi rutrum in. Praesent tempor tortor eros, nec blandit eros commodo a. Quisque volutpat, risus ac mattis commodo, lacus quam adipiscing nisl, id scelerisque ligula diam nec turpis. Donec malesuada, felis vitae tristique pretium, ante justo commodo ligula, id viverra nibh turpis quis massa. Maecenas sagittis eu felis sed pellentesque. Integer varius justo sem, sed viverra leo suscipit id. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="I2c-zX-3Z2" firstAttribute="leading" secondItem="e72-pG-oYa" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="0dc-iZ-vDZ"/>
+                                    <constraint firstItem="I2c-zX-3Z2" firstAttribute="top" secondItem="e72-pG-oYa" secondAttribute="top" constant="20" symbolic="YES" type="user" id="Bag-3P-efI"/>
+                                    <constraint firstAttribute="trailing" secondItem="I2c-zX-3Z2" secondAttribute="trailing" constant="20" type="user" id="sa6-CE-ppi"/>
+                                    <constraint firstAttribute="bottom" secondItem="I2c-zX-3Z2" secondAttribute="bottom" constant="20" type="user" id="yRT-MP-FeQ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e72-pG-oYa" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="JKG-AX-GnW"/>
-                            <constraint firstItem="e72-pG-oYa" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="KJm-Qo-xQC"/>
-                            <constraint firstItem="e72-pG-oYa" firstAttribute="bottom" secondItem="MaX-yL-YzP" secondAttribute="top" type="default" id="aJK-M7-AGb"/>
-                            <constraint firstItem="e72-pG-oYa" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="kYU-hJ-y5r"/>
+                            <constraint firstItem="e72-pG-oYa" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="user" id="JKG-AX-GnW"/>
+                            <constraint firstItem="e72-pG-oYa" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="KJm-Qo-xQC"/>
+                            <constraint firstItem="e72-pG-oYa" firstAttribute="bottom" secondItem="MaX-yL-YzP" secondAttribute="top" type="user" id="UBe-fu-3Jb"/>
+                            <constraint firstItem="e72-pG-oYa" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="user" id="kYU-hJ-y5r"/>
                             <constraint firstItem="MaX-yL-YzP" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="naD-cn-ERZ"/>
                             <constraint firstItem="MaX-yL-YzP" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="p0P-Jk-BWF"/>
-                            <constraint firstItem="MaX-yL-YzP" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="qxY-t2-Dl6"/>
+                            <constraint firstItem="MaX-yL-YzP" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="qxY-t2-Dl6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -55,18 +76,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SSViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="toggleLoadingView:" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="loadingViewContainer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
