@@ -7,9 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoadingView : UIView
+@interface SSLoadingView : UIView
 
-+(LoadingView *)loadingViewInView:(UIView *)superView;
++(SSLoadingView *)loadingViewInView:(UIView *)superView;
 -(void)removeView;
 
 @end

@@ -3,17 +3,17 @@
 //  Created by Stephanie Sharp on 26/05/13.
 //
 
-#import "LoadingView.h"
+#import "SSLoadingView.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation LoadingView
+@implementation SSLoadingView
 
 #pragma mark - Class methods
 
-+(LoadingView *)loadingViewInView:(UIView *)superView
++(SSLoadingView *)loadingViewInView:(UIView *)superView
 {
     // Create a new view with the same frame size as the superView
-    LoadingView * loadingView = [[LoadingView alloc] initWithFrame:superView.bounds];
+    SSLoadingView * loadingView = [[SSLoadingView alloc] initWithFrame:superView.bounds];
     
     if(!loadingView)
         return nil;
