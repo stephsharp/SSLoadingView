@@ -10,4 +10,8 @@
 
 @interface SSViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIView * loadingViewContainer;
+
+- (IBAction)toggleLoadingView:(UISegmentedControl *)sender;
+
 @end

@@ -7,8 +7,11 @@
 //
 
 #import "SSViewController.h"
+#import "SSLoadingView.h" 
 
 @interface SSViewController ()
+
+@property (nonatomic, strong) SSLoadingView * loadingView;
 
 @end
 
@@ -17,13 +20,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    
+    // Show loading view
+    self.loadingView = [SSLoadingView loadingViewInView:self.loadingViewContainer];
+}
+
+- (void)toggleLoadingView:(UISegmentedControl *)sender
+{
+    if (sender.selectedSegmentIndex == 0)
+    {
+        // Show loading view
+        self.loadingView = [SSLoadingView loadingViewInView:self.loadingViewContainer];
+    }
+    else
+    {
+        // Remove loading view
+        [self.loadingView removeView];
+    }
 }
 
 @end
