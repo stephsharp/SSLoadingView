@@ -22,9 +22,12 @@
     [super viewDidLoad];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewDidLayoutSubviews
 {
-    [super viewDidAppear:animated];
+    [super viewDidLayoutSubviews];
+    
+    // Remove loading view
+    [self.loadingView removeView];
     
     // Show loading view
     self.loadingView = [SSLoadingView loadingViewInView:self.loadingViewContainer];
