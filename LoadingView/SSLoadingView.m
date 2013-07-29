@@ -35,8 +35,10 @@
                                  UIViewAutoresizingFlexibleBottomMargin |
                                  UIViewAutoresizingFlexibleLeftMargin;
     
+    loadingView.translatesAutoresizingMaskIntoConstraints = YES;
+    
     // Place it in the middle of the view
-    indicator.center = superView.center;
+    indicator.center = loadingView.center;
     
     // Add it into the loadingView
     [loadingView addSubview:indicator];
