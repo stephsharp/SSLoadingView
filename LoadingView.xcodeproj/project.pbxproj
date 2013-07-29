@@ -19,6 +19,7 @@
 		970FDD1017A67189008DC2FB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970FDD0E17A67189008DC2FB /* MainStoryboard.storyboard */; };
 		970FDD1317A67189008DC2FB /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FDD1217A67189008DC2FB /* SSViewController.m */; };
 		970FDD1A17A671C5008DC2FB /* SSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FDD1917A671C5008DC2FB /* SSLoadingView.m */; };
+		970FDD1D17A679C3008DC2FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970FDD1B17A679B2008DC2FB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		970FDD1217A67189008DC2FB /* SSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
 		970FDD1817A671C5008DC2FB /* SSLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLoadingView.h; sourceTree = "<group>"; };
 		970FDD1917A671C5008DC2FB /* SSLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLoadingView.m; sourceTree = "<group>"; };
+		970FDD1B17A679B2008DC2FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970FDD1D17A679C3008DC2FB /* QuartzCore.framework in Frameworks */,
 				970FDCF917A67189008DC2FB /* UIKit.framework in Frameworks */,
 				970FDCFA17A67189008DC2FB /* Foundation.framework in Frameworks */,
 				970FDCFB17A67189008DC2FB /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +83,7 @@
 				970FDCD117A67118008DC2FB /* UIKit.framework */,
 				970FDCD317A67118008DC2FB /* Foundation.framework */,
 				970FDCD517A67118008DC2FB /* CoreGraphics.framework */,
+				970FDD1B17A679B2008DC2FB /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
